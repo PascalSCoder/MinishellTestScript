@@ -12,10 +12,9 @@ test_count=0
 while IFS= read -r line
 do
 	printf "$NORMAL_COLOR Test: $line\n"
-	echo $line > tmp
 
-	mini_output=$(./minishell < tmp | sed '/minishell>/d')
-	bash_output=$(bash < tmp)
+	mini_output=$(echo $line | ./minishell | sed '/minishell>/d')
+	bash_output=$(echo $line | bash)
 	if [ "$mini_output" != "$bash_output" ]
 	then
 		printf "$ERROR_COLOR [KO!]\n"
@@ -35,5 +34,3 @@ then
 else
 	printf "$SUCCESS_COLOR PASSED [$pass_count/$test_count]\n"
 fi
-
-rm tmp
