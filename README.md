@@ -1,5 +1,5 @@
 # MinishellTestScript v0.1
-(WIP) Minishell testing script, written in bash
+(WIP) Minishell testing script, written in shell
 
 - Ensure that BASH is installed
 - Ensure that the executable is named "minishell"
