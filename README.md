@@ -8,3 +8,5 @@
 
 **IMPORTANT: LEAVE A BLANK LINE AT THE BOTTOM IN YOUR CASES FILE**
 
+Run test.sh:
+The script runs every line in cases.txt with both minishell and bash, compares the output and returns OK/KO depending on whether they are **exactly** equal.
