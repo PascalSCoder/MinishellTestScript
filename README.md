@@ -4,6 +4,7 @@
 - Ensure that BASH is installed
 - Ensure that the executable is named "minishell"
 - Place test.sh and cases.txt in the same folder as the minishell executable
+- In test.sh, edit in command: [sed '/minishell>/d'] "minishell>" to your prefix.
 - Edit cases.txt conform your needs
 
 **IMPORTANT: LEAVE A BLANK LINE AT THE BOTTOM IN YOUR CASES FILE**
