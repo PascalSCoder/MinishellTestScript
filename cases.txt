@@ -1,0 +1,4 @@
+ls
+ls -la
+cat cases.txt | wc -l
+cat cases.txt | wc -l | wc -l
