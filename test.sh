@@ -1,19 +1,25 @@
 #!/bin/bash
 
+#CONFIG
 cases="cases.txt"
+prompt="minishell>"
+executable="minishell"
 
 SUCCESS_COLOR="\033[01;32m"
 ERROR_COLOR="\033[01;31m"
 NORMAL_COLOR="\033[0m"
+
+
+
 
 pass_count=0
 test_count=0
 
 while IFS= read -r line
 do
-	printf "$NORMAL_COLOR Test: $line\n"
+	printf "$NORMAL_COLOR Testcase: $line\n"
 
-	mini_output=$(echo $line | ./minishell | sed '/minishell>/d')
+	mini_output=$(echo $line | ./minishell | sed "/$prompt/d")
 	bash_output=$(echo $line | bash)
 	if [ "$mini_output" != "$bash_output" ]
 	then
