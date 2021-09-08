@@ -1,13 +1,14 @@
-# MinishellTestScript v0.1
+# MinishellTestScript v0.2
 (WIP) Minishell testing script, written in shell
 
+**Installation**
 - Ensure that BASH is installed
-- Ensure that the executable is named "minishell"
 - Place test.sh and cases.txt in the same folder as the minishell executable
-- In test.sh, edit in command: [sed '/minishell>/d'] "minishell>" to your prefix.
-- Edit cases.txt conform your needs
-
 **IMPORTANT: LEAVE A BLANK LINE AT THE BOTTOM IN YOUR CASES FILE**
 
-Run test.sh:
+**Configuration**
+- You can change the config variables at the top, to easily adapt to your needs
+- Add testcases to your testcases file
+
+**How it works**
 The script runs every line in cases.txt with both minishell and bash, compares the output and returns OK/KO depending on whether they are **exactly** equal.
