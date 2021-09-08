@@ -11,4 +11,4 @@
 - Add testcases to your testcases file
 
 **How it works**
-The script runs every line in cases.txt with both minishell and bash, compares the output and returns OK/KO depending on whether they are **exactly** equal.
+- The script runs every line in cases.txt with both minishell and bash, compares the output and returns OK/KO depending on whether they are **exactly** equal.
