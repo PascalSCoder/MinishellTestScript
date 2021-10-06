@@ -1,4 +1,4 @@
-# MinishellTestScript v0.2
+# MinishellTestScript v0.3
 (WIP) Minishell testing script, written in shell
 
 **Installation**
@@ -8,7 +8,11 @@
 
 **Configuration**
 - You can change the config variables at the top, to easily adapt to your needs
-- Add testcases to your testcases file
+- Add testcases to the files in cases dir
 
 **How it works**
 - The script runs every line in cases.txt with both minishell and bash, compares the output and returns OK/KO depending on whether they are **exactly** equal.
+
+**Runtime options**
+- ./test to run with default cases file
+- ./test [path] to run with specified file
