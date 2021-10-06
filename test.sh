@@ -42,3 +42,5 @@ then
 else
 	printf "$SUCCESS_COLOR PASSED [$pass_count/$test_count]\n"
 fi
+
+printf "$NORMAL_COLOR"
